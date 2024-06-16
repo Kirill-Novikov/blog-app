@@ -1,22 +1,4 @@
-/* html {
-  box-sizing: border-box;
-  width: 300px;
-  height: 30px;
-} */
 
-/* .btn-reset {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.container {
-  max-width: 1470px;
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
-} */
 
 .row {
   display: flex;
