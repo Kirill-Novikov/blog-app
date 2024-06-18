@@ -12,9 +12,17 @@ const validationMessage = document.getElementById("validationMessage");
 newPostBtnNode.addEventListener("click", function () {
   const postFromUser = getPostFromUser();
 
+  if (postTitleInputNode.value === "" || postTextInputNode.value === "") {
+    return;
+  }
+
   addPost(postFromUser);
 
   renderPosts();
+
+  postTitleInputNode.value = "";
+
+  postTextInputNode.value = "";
 });
 
 postTitleInputNode.addEventListener("input", validation);
