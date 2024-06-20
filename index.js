@@ -16,6 +16,13 @@ newPostBtnNode.addEventListener("click", function () {
     return;
   }
 
+  if (
+  postTitleInputNode.value.length > TITLE_VALIDATION_LIMIT ||
+  postTextInputNode.value.length > TEXT_VALIDATION_LIMIT
+  ) {
+    return;
+  }
+
   addPost(postFromUser);
 
   renderPosts();
